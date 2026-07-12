@@ -1,17 +1,16 @@
 {
-  "name": "fill googleform",
-  "projectId": "9821295a-9c7e-4133-bf76-376d6bc94633",
+  "name": "assaiment1",
+  "projectId": "2e742baa-ab0f-4937-9e7e-aa838208879b",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[3.6.0-preview]",
     "UiPath.System.Activities": "[26.6.1]",
     "UiPath.UIAutomation.Activities": "[26.10.0]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
-  "studioVersion": "26.0.196.0",
+  "studioVersion": "26.0.197.0",
   "projectVersion": "1.0.0",
   "runtimeOptions": {
     "autoDispose": false,
@@ -47,7 +46,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "ef204de7-2165-4f1a-97ad-294cb1e3d650",
+      "uniqueId": "a1fe01c7-f82b-487e-b898-9343e476f3fe",
       "input": [],
       "output": []
     }

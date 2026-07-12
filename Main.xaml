@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=System.Private.CoreLib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -26,24 +26,12 @@
       <x:String>System.Windows.Markup</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
-      <x:String>System.ComponentModel</x:String>
-      <x:String>System.Runtime.Serialization</x:String>
-      <x:String>System.Xml.Serialization</x:String>
-      <x:String>UiPath.Excel</x:String>
-      <x:String>UiPath.Platform.ResourceHandling</x:String>
-      <x:String>UiPath.Excel.Activities</x:String>
-      <x:String>System.Linq.Expressions</x:String>
       <x:String>System.Reflection</x:String>
-      <x:String>UiPath.DataTableUtilities</x:String>
-      <x:String>UiPath.UIAutomationNext.Enums</x:String>
-      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
-      <x:String>UiPath.UIAutomationNext.Models</x:String>
-      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
-      <x:String>UiPath.Platform.ObjectLibrary</x:String>
-      <x:String>UiPath.Platform.SyncObjects</x:String>
-      <x:String>System.Security</x:String>
-      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -77,187 +65,171 @@
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
       <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
-      <AssemblyReference>System.ComponentModel</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
-      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
-      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
-      <AssemblyReference>System.Private.Xml</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Excel</AssemblyReference>
-      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
       <AssemblyReference>System.Console</AssemblyReference>
       <AssemblyReference>System.Security.Permissions</AssemblyReference>
       <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Private.Uri</AssemblyReference>
-      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Linq.Async</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
-      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
-      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
-      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
-      <AssemblyReference>UiPath.Workflow</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
-      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="639.3333333333333,2262" sap2010:WorkflowViewState.IdRef="Sequence_6">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="614.6666666666666,1786" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="sd:DataTable" Name="DT_contract" />
+      <Variable x:TypeArguments="x:String" Name="int_index" />
+      <Variable x:TypeArguments="x:String" Name="in_outputfolderpath" />
+      <Variable x:TypeArguments="x:String" Name="arr_folderpath" />
+      <Variable x:TypeArguments="x:String" Name="in_inputfolderpath" />
+      <Variable x:TypeArguments="x:String" Name="variable1" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="exrtact data" sap:VirtualizedContainerService.HintSize="522,489.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="check and create folder" sap:VirtualizedContainerService.HintSize="511.3333333333333,1112" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
-        <Variable x:TypeArguments="sd:DataTable" Name="DT_contract" />
+        <Variable x:TypeArguments="x:String" Name="str_currentfile" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ReadRange AddHeaders="True" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="416,230" sap2010:WorkflowViewState.IdRef="ReadRange_1" Range="A1:D5" SheetName="sheet1" WorkbookPath="@&quot;C:\Users\Yahia\Downloads\contacts.xlsx1\\C:\Users\Yahia\Downloads\contacts.xlsx&quot;">
-        <ui:ReadRange.DataTable>
-          <OutArgument x:TypeArguments="sd:DataTable">
-            <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">DT_contract</CSharpReference>
+      <Assign sap:VirtualizedContainerService.HintSize="477.3333333333333,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">
+            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">arr_folderpath</CSharpReference>
           </OutArgument>
-        </ui:ReadRange.DataTable>
-      </ui:ReadRange>
-      <ui:LogMessage DisplayName="log datatable" sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
-        <ui:LogMessage.Message>
+        </Assign.To>
+        <Assign.Value>
           <InArgument x:TypeArguments="x:Object">
-            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">DT_contract.Rows[0][0]</CSharpValue>
+            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">new string[] { in_inputfolderpath, in_outputfolderpath, in_outputfolderpath + @"\contracts", in_outputfolderpath + @"\financials", in_outputfolderpath + @"\tech", in_outputfolderpath + @"\others" }</CSharpValue>
           </InArgument>
-        </ui:LogMessage.Message>
-      </ui:LogMessage>
-    </Sequence>
-    <Sequence DisplayName="fill googleform" sap:VirtualizedContainerService.HintSize="522,1750" sap2010:WorkflowViewState.IdRef="Sequence_3">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="488,1667.3333333333333" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
-        <ui:ForEachRow.Body>
-          <ActivityAction x:TypeArguments="sd:DataRow">
+        </Assign.Value>
+      </Assign>
+      <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each folderpath" sap:VirtualizedContainerService.HintSize="477.3333333333333,416.6666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_1">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
-              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+              <DelegateInArgument x:TypeArguments="x:Object" Name="currentItem" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="486,1492.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="475.3333333333333,284.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Contact information" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,1432.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="d822775a-ffb0-48f9-9303-3582b024cfc4" Version="V2">
-                <uix:NApplicationCard.Body>
-                  <ActivityAction x:TypeArguments="x:Object">
-                    <ActivityAction.Argument>
-                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-                    </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1238" sap2010:WorkflowViewState.IdRef="Sequence_7">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Your answer'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="d822775a-ffb0-48f9-9303-3582b024cfc4" Version="V5">
-                        <uix:NTypeInto.Target>
-                          <uix:TargetAnchorable BrowserURL="docs.google.com/forms/d/e/1FAIpQLSeoKSI_tFa08fSjiQJML-r9aHCo-3KEQZQ9-BmALkKmxdLdHQ/viewform" ContentHash="Wl3yzP8LQk2PN7rcVMCrvQ" DesignTimeRectangle="517, 846, 118, 30" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Your answer' tag='DIV' /&gt;" Guid="8f383779-e0ff-4759-a73f-866a397f3de4" InformativeScreenshot="822d03596364fb4d620d1c247fb5358a.jpg" Reference="NDqIU_ebk02gu5nD4ZLmNw/iAWTysTOjUaqQsh2186AKg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contact information' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                        </uix:NTypeInto.Target>
-                        <uix:NTypeInto.Text>
-                          <InArgument x:TypeArguments="x:String">
-                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">CurrentRow["Name"].ToString()</CSharpValue>
-                          </InArgument>
-                        </uix:NTypeInto.Text>
-                      </uix:NTypeInto>
-                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Your answer(1)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="d822775a-ffb0-48f9-9303-3582b024cfc4" Version="V5">
-                        <uix:NTypeInto.Target>
-                          <uix:TargetAnchorable BrowserURL="docs.google.com/forms/d/e/1FAIpQLSeoKSI_tFa08fSjiQJML-r9aHCo-3KEQZQ9-BmALkKmxdLdHQ/viewform" ContentHash="Vmo7U_CAqk-4BirUHribtw" DesignTimeRectangle="517, 1070, 118, 30" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Your answer' idx='2' tag='DIV' /&gt;" Guid="5360a635-0ac7-4869-9346-2e8581825f30" InformativeScreenshot="01c546cf322b5b82d6484d49b1346b21.jpg" Reference="NDqIU_ebk02gu5nD4ZLmNw/FrZtw9E_dkqJHJkBgz5Y7A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contact information' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                        </uix:NTypeInto.Target>
-                        <uix:NTypeInto.Text>
-                          <InArgument x:TypeArguments="x:String">
-                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">CurrentRow["Email"].ToString()</CSharpValue>
-                          </InArgument>
-                        </uix:NTypeInto.Text>
-                      </uix:NTypeInto>
-                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TEXTAREA'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="d822775a-ffb0-48f9-9303-3582b024cfc4" Version="V5">
-                        <uix:NTypeInto.Target>
-                          <uix:TargetAnchorable BrowserURL="docs.google.com/forms/d/e/1FAIpQLSeoKSI_tFa08fSjiQJML-r9aHCo-3KEQZQ9-BmALkKmxdLdHQ/viewform" ContentHash="N1e8fF7NF0WoSIMn1ggw2w" DesignTimeRectangle="517, 916, 886, 36" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" Guid="b24da589-27b4-4ee7-85c7-969359f4134a" InformativeScreenshot="abc7f946795e16b9d73ab87085495593.jpg" Reference="NDqIU_ebk02gu5nD4ZLmNw/4JEOyJp1e0WdQJHPiXzvug" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contact information' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                        </uix:NTypeInto.Target>
-                        <uix:NTypeInto.Text>
-                          <InArgument x:TypeArguments="x:String">
-                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">CurrentRow["Addrres"].ToString()</CSharpValue>
-                          </InArgument>
-                        </uix:NTypeInto.Text>
-                      </uix:NTypeInto>
-                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="d822775a-ffb0-48f9-9303-3582b024cfc4" Version="V5">
-                        <uix:NTypeInto.Target>
-                          <uix:TargetAnchorable BrowserURL="docs.google.com/forms/d/e/1FAIpQLSeoKSI_tFa08fSjiQJML-r9aHCo-3KEQZQ9-BmALkKmxdLdHQ/viewform" ContentHash="r0pk4PC6DkS1l_UjJAYwHg" DesignTimeRectangle="517, 718, 443, 36" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='2' tag='INPUT' type='text' /&gt;" Guid="f7519606-ece2-4960-a2d4-64657a0a88fd" InformativeScreenshot="c1a828f4087cab6756045f6350a543f9.jpg" Reference="NDqIU_ebk02gu5nD4ZLmNw/-11VPJjxhUiHPGU3ZCsqCQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contact information' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                        </uix:NTypeInto.Target>
-                        <uix:NTypeInto.Text>
-                          <InArgument x:TypeArguments="x:String">
-                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">CurrentRow["phone number"].ToString()</CSharpValue>
-                          </InArgument>
-                        </uix:NTypeInto.Text>
-                      </uix:NTypeInto>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,186" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d822775a-ffb0-48f9-9303-3582b024cfc4" Version="V5">
-                        <uix:NClick.Target>
-                          <uix:TargetAnchorable BrowserURL="docs.google.com/forms/d/e/1FAIpQLSeoKSI_tFa08fSjiQJML-r9aHCo-3KEQZQ9-BmALkKmxdLdHQ/viewform" ContentHash="ve1QFmA7wEG4BTU5tP70jw" DesignTimeRectangle="517, 825, 71, 54" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='Submit' tag='SPAN' type='' class='NPEfkd RveJvd snByac' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Submit' /&gt;" Guid="44eb7506-ffd3-4e39-8da3-fda9c5a3e82d" InformativeScreenshot="8f1fca5a6b88b3085d8a1c6abbc9e6de.jpg" Reference="NDqIU_ebk02gu5nD4ZLmNw/ky5tOOHtkU6HBHPEXxqVfg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contact information' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
-                            <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                <uix:Target DesignTimeRectangle="480, 824, 145, 56" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-role='button' tag='DIV' type='' class='uArJ5e UQuaGc Y5sE8d VkkpIf QvWxOd' aaname='' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Submit' /&gt;" Guid="187db26e-fd53-49b0-b7d8-402e3389c9f0" SearchSteps="FuzzySelector" />
-                              </scg:List>
-                            </uix:TargetAnchorable.Anchors>
-                          </uix:TargetAnchorable>
-                        </uix:NClick.Target>
-                      </uix:NClick>
-                    </Sequence>
-                  </ActivityAction>
-                </uix:NApplicationCard.Body>
-                <uix:NApplicationCard.CloseMode>
-                  <InArgument x:TypeArguments="uix:NAppCloseMode">
-                    <CSharpValue x:TypeArguments="uix:NAppCloseMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">UiPath.UIAutomationNext.Enums.NAppCloseMode.IfOpenedByAppBrowser</CSharpValue>
-                  </InArgument>
-                </uix:NApplicationCard.CloseMode>
-                <uix:NApplicationCard.OCREngine>
-                  <ActivityFunc x:TypeArguments="sd1:Image, scg:IEnumerable(scg:KeyValuePair(sd2:Rectangle, x:String))">
-                    <ActivityFunc.Argument>
-                      <DelegateInArgument x:TypeArguments="sd1:Image" Name="Image" />
-                    </ActivityFunc.Argument>
-                  </ActivityFunc>
-                </uix:NApplicationCard.OCREngine>
-                <uix:NApplicationCard.OpenMode>
-                  <InArgument x:TypeArguments="uix:NAppOpenMode">
-                    <CSharpValue x:TypeArguments="uix:NAppOpenMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">UiPath.UIAutomationNext.Enums.NAppOpenMode.Always</CSharpValue>
-                  </InArgument>
-                </uix:NApplicationCard.OpenMode>
-                <uix:NApplicationCard.TargetApp>
-                  <uix:TargetApp Area="-11, -11, 1942, 1150" BrowserType="Edge" ContentHash="T7Me2BSgMUaXosCHBCQFlA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGfSURBVDhPrZOxSwJhGMZt7S8oamh0DApcHbr7B6KzrU0Fi/o8xaIxyHCoCFRKLjWCCqKGIM+gvGxNs2iLlrsIa6twCXqf+BT17jQI6oHf8B3v77l7Dz6H4z8jy3B6vei1P/9F0CMzuolGCfMRqoUYJF8GBzMxwtwiISgT5KCZr12LHpqDO7pM4CmVgCAjzZcFUieEyj1QuQVuKw2OjxolloJwGH3zEaJyGdjJEmT2te7L4G1pm5DeJ2SyhGymwfoa8Rd8Wgp4ZIapIKMH/nmMYcC3h9HpFTpjCx0r3IVm4bL7DknUVz2CXvWIenFSNFySoAc8gv7oEQ2YkUTjlc9a5AnhadgyNGYcSoLxYZfNjIvPzlYBP3QUiMa7XfqxgKe5giToV60VREO3i11X4MlpiKkFVFUNxfwVRhIKAgkFjwkFMBNX8JpQELPIahH9qgZSNYBzeoGtuII3u2yCNlIYbBcU4G/K9YJzvHSR7PhbBQB6chrKXM5pqKmXkOIKdrtIdeIKStxpFTSTL8B5ct2+TMk0hpIpuM1spmH9+3/NNxJ4y3Enc5wpAAAAAElFTkSuQmCC" InformativeScreenshot="a932e1cab2ecd8516e72ade24abd1426.jpg" Reference="NDqIU_ebk02gu5nD4ZLmNw/nti0D_qGyUue8C0dmxm86w" Selector="&lt;html app='msedge.exe' title='Contact information' /&gt;" Url="https://docs.google.com/forms/d/e/1FAIpQLSeoKSI_tFa08fSjiQJML-r9aHCo-3KEQZQ9-BmALkKmxdLdHQ/viewform" Version="V3" />
-                </uix:NApplicationCard.TargetApp>
-              </uix:NApplicationCard>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="check and create - Invoke Workflow File (check and create.xaml)" sap:VirtualizedContainerService.HintSize="441.3333333333333,224.66666666666666" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="check and create.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="arr_folderpath" />
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
             </Sequence>
           </ActivityAction>
-        </ui:ForEachRow.Body>
-        <ui:ForEachRow.DataTable>
-          <InArgument x:TypeArguments="sd:DataTable">
-            <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">DT_contract</CSharpValue>
+        </ui:ForEach.Body>
+        <ui:ForEach.Values>
+          <InArgument x:TypeArguments="sc:IEnumerable">
+            <CSharpValue x:TypeArguments="sc:IEnumerable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">arr_folderpath</CSharpValue>
           </InArgument>
-        </ui:ForEachRow.DataTable>
-      </ui:ForEachRow>
+        </ui:ForEach.Values>
+      </ui:ForEach>
+      <Sequence DisplayName="getting files" sap:VirtualizedContainerService.HintSize="477.3333333333333,426.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Assign sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_2">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">
+              <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">arr_folderpath</CSharpReference>
+            </OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String">
+              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">Directory.GetFiles(in_inputfolderpath)</CSharpValue>
+            </InArgument>
+          </Assign.Value>
+        </Assign>
+        <Assign sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="Assign_3">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">
+              <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">int_index</CSharpReference>
+            </OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String">
+              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">0</CSharpValue>
+            </InArgument>
+          </Assign.Value>
+        </Assign>
+      </Sequence>
+    </Sequence>
+    <Sequence sap:VirtualizedContainerService.HintSize="511.3333333333333,651.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="str_currentextension" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_4">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">
+            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">str_currentfile</CSharpReference>
+          </OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:Object">
+            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">arr_folderpath[Convert.ToInt32(int_index)]</CSharpValue>
+          </InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_5">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">
+            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">str_currentextension</CSharpReference>
+          </OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">
+            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">System.IO.Path.GetExtension(str_currentextension)</CSharpValue>
+          </InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:RenameFileX FileResource="{x:Null}" OutputFileResource="{x:Null}" DisplayName="Rename File" sap:VirtualizedContainerService.HintSize="416,215.33333333333334" sap2010:WorkflowViewState.IdRef="RenameFileX_1" KeepExtension="True">
+        <ui:RenameFileX.FilePath>
+          <InArgument x:TypeArguments="x:String">
+            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">str_currentextension</CSharpValue>
+          </InArgument>
+        </ui:RenameFileX.FilePath>
+        <ui:RenameFileX.NewName>
+          <InArgument x:TypeArguments="x:String">
+            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">System.IO.Path.GetFileNameWithoutExtension(str_currentextension)</CSharpValue>
+          </InArgument>
+        </ui:RenameFileX.NewName>
+      </ui:RenameFileX>
     </Sequence>
   </Sequence>
 </Activity>
