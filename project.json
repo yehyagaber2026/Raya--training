@@ -1,6 +1,6 @@
 {
-  "name": "assaiment1",
-  "projectId": "2e742baa-ab0f-4937-9e7e-aa838208879b",
+  "name": "accuweather",
+  "projectId": "ac78cbdf-83d7-40a9-815a-9981bae4a1e2",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
@@ -46,7 +46,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "a1fe01c7-f82b-487e-b898-9343e476f3fe",
+      "uniqueId": "59ca1f4e-19c6-4c2b-87d0-616d5ba164ac",
       "input": [],
       "output": []
     }
