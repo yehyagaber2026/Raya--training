@@ -1,10 +1,10 @@
 {
-  "name": "BlankProcess6",
-  "projectId": "00f3fad4-2041-427f-be57-0634ec5a6766",
+  "name": "project1",
+  "projectId": "70fc1f11-961f-4af8-b445-c43d8c7b4b89",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.GSuite.Activities": "[3.10.10]",
+    "UiPath.Mail.Activities": "[2.10.10]",
     "UiPath.System.Activities": "[26.6.1]"
   },
   "webServices": [],
@@ -42,11 +42,11 @@
     "fileInfoCollection": [],
     "saveToCloud": false
   },
-  "expressionLanguage": "CSharp",
+  "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "d79f2e4e-55dd-4b85-8aaf-ce4e2ddb926d",
+      "uniqueId": "47b2a1b3-4993-4036-8d69-122c3d349bba",
       "input": [],
       "output": []
     }
