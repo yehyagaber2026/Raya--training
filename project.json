@@ -1,11 +1,11 @@
 {
-  "name": "accuweather",
-  "projectId": "ac78cbdf-83d7-40a9-815a-9981bae4a1e2",
+  "name": "BlankProcess6",
+  "projectId": "00f3fad4-2041-427f-be57-0634ec5a6766",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.System.Activities": "[26.6.1]",
-    "UiPath.UIAutomation.Activities": "[26.10.0]"
+    "UiPath.GSuite.Activities": "[3.10.10]",
+    "UiPath.System.Activities": "[26.6.1]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -46,7 +46,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "59ca1f4e-19c6-4c2b-87d0-616d5ba164ac",
+      "uniqueId": "d79f2e4e-55dd-4b85-8aaf-ce4e2ddb926d",
       "input": [],
       "output": []
     }
